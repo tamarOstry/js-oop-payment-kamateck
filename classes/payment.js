@@ -89,10 +89,10 @@ class CreditCard extends Payment{
     set payments(payments){this.#payments=payments;}
     get payments(){return this.#payments;}
 
-    update=
+    update
     (payment,date=undefined,sum=undefined, description=undefined,status=undefined,typePayment=undefined,user=undefined,
     number=undefined,LastFourDigits=undefined,code=undefined,password=undefined,payments=undefined)
-    =>{
+    {
         super.update(payment,date,sum,description,status,typePayment,user);
                if(number!=undefined)
                    payment.#number=number;
